@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Point and Click</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			background: #111;
+		}
+	</style>
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id='root'></div>
+
+	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-database.js"></script>
+
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAzg-IQOzp4nGnGlzWQCogDcQ8RTPrM1Xs",
+			databaseURL: "https://pointandclick-d9ec1.firebaseio.com"
+		};
+
+		firebase.initializeApp(config);
+
+		__DB = firebase.database()
+	</script>
+
+	<script src="/static/bundle.js"></script>
+</body>
+
+</html>
